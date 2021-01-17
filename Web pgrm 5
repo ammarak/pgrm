@@ -1,0 +1,55 @@
+<?xml-stylesheet type="text/css" href="lab5.css"?>
+<STUDENTDATA>
+
+<STUDENT>
+ <USN>USN:4MT17IS056</USN>
+ <NAME>NAME:VARUN</NAME>
+<COLLEGE>COLLEGE:MITE</COLLEGE>
+<BRANCH>BRANCH:ISE</BRANCH>
+<YEAR>YEAR:2017</YEAR>
+<EMAIL>EMAIL:varunbangera3010@gmail.com</EMAIL>
+</STUDENT>
+<STUDENT>
+                 <USN>USN:4MT17IS057</USN>
+                 <NAME>NAME:VEEKSHA</NAME>
+                 <COLLEGE>COLLEGE:MITE</COLLEGE>
+                 <BRANCH>BRANCH:ISE</BRANCH>
+                 <YEAR>YEAR:2017</YEAR>
+                 <EMAIL>EMAIL:raiveeksha0510@gmail.com</EMAIL>
+        </STUDENT>
+
+<STUDENT>
+<USN>USN:4MT17IS003</USN>
+<NAME>NAME:AMMAR</NAME>
+<COLLEGE>COLLEGE:MITE</COLLEGE>
+<BRANCH>BRANCH:ISE</BRANCH>
+<YEAR>YEAR:2017</YEAR>
+<EMAIL>EMAIL:ammarakram@gmail.com</EMAIL>
+</STUDENT>
+</STUDENTDATA>
+
+
+
+
+
+
+
+
+    USN{
+    display:block; margin-left: 10px; font-size:14pt; color: Red;
+    }
+    NAME{
+    display:block; margin-left: 20px; font-size:14pt; color: Blue;
+    }
+    COLLEGE{
+    display:block; margin-left: 20px; font-size:12pt; color: Maroon;
+    }
+    BRANCH{
+    display:block; margin-left: 20px; font-size:12pt; color: Purple;
+    }
+    YEAR{
+    display:block; margin-left: 20px; font-size:14pt; color: Green;
+    }
+    EMAIL{
+    display:block; margin-left: 20px; font-size:12pt; color: Blue;
+    }
