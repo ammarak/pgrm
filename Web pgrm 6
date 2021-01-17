@@ -1,3 +1,5 @@
+6.php ,  counter.txt
+
 <strong style="color:green;background:lightpink;">
 <?php
 $handle=fopen("counter.txt","r");
