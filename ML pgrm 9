@@ -1,1 +1,38 @@
+from sklearn.datasets import load_iris
+from sklearn.neighbors import KNeighborsClassifier
+import numpy as np
+from sklearn.model_selection import train_test_split
+iris_dataset=load_iris()
+print("\n IRIS Features----TARGET Name: \n",iris_dataset.target_names)
+
+
+
+
+print("\n IRIS Features----TARGET Name: \n",iris_dataset.target_names)
+for i in range(len(iris_dataset.target_names)):
+  print("\n [{0}]:[{1}]".format(i,iris_dataset.target_names[i]))
+print("\n IRIS DATA: \n",iris_dataset["data"])
+
+
+
+X_train,X_test,Y_train,Y_test=train_test_split(iris_dataset["data"],iris_dataset["target"],random_state=0)
+print("\n Target: \n",iris_dataset["target"])
+print("\n XTrain \n",X_train)
+print("\n XTest \n",X_test)
+print("\n YTrain \n",Y_train)
+print("\n YTest \n",Y_test)
+kn=KNeighborsClassifier(n_neighbors=5)
+kn.fit(X_train,Y_train)
+
+
+
+
+for i in range(len(X_test)):
+  X=X_test[i]
+  X_new=np.array([X])
+  prediction=kn.predict(X_new)
+  print("\n Actual:{0} {1}".format(Y_test[i],
+                                   iris_dataset["target_names"][Y_test[i]]))
+  print("\n Predicted:{0} {1}".format(prediction,iris_dataset["target_names"][prediction]))
+print("\n Test Score[accuracy]:{:.2f}\n".format(kn.score(X_test,Y_test)))
 
