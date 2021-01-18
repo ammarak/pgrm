@@ -1,19 +1,10 @@
 7.php
 
-<strong style="color:green;background:lightpink;">
+<strong style="color:green;">
 <?php
-$handle=fopen("counter.txt","r");
-if(!$handle)
-{ 
-    echo "could not open the file";
-}
-else {
-$counter=(int)fread($handle,20);
-fclose($handle);
-$counter++;
-echo" <p>WELCOME TO THE PAGE</p> <p align=center><strong> you are visitor no". $counter. "</strong> </p>";
-$handle=fopen("counter.txt", "w");
-fwrite($handle,$counter);
-fclose($handle); 
-}
+date_default_timezone_set('Asia/Calcutta');
+header("Refresh:1");
+$d=date('yy-m-d H:i:s');
+echo "SERVER TIME</br> <strong>". $d ."</strong>";
 ?>
+
