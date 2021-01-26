@@ -33,7 +33,7 @@ def learn(concepts,target):
     general_h.remove(['?','?','?','?','?','?'])
   return specific_h,general_h
   
-  s_final,g_final=learn(concepts,target) 
+ s_final,g_final=learn(concepts,target) 
  print("\n\n\nfinal specific_h:",s_final,sep="\n") 
  print("\n\n\nfinal general_h:",g_final,sep="\n") 
 
